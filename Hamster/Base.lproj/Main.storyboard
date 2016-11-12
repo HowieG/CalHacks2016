@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-P2-f29">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-4P-q1p">
+                                <rect key="frame" x="0.0" y="263" width="381" height="289"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="t0p-4P-XWG">
+                                <rect key="frame" x="59" y="85" width="257" height="138"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksz-jE-0GX">
+                                <rect key="frame" x="68" y="316" width="91" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="bqy-wU-1au"/>
+                                    <constraint firstAttribute="height" constant="21" id="yT4-BO-PpM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-1n-VZx">
+                                <rect key="frame" x="65" y="345" width="244" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9g-Ul-4od">
+                                <rect key="frame" x="65" y="424" width="244" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-PX-oQL">
+                                <rect key="frame" x="68" y="395" width="91" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xye-s2-LpP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpL-Bi-dbV">
+                                <rect key="frame" x="144" y="477" width="88" height="30"/>
+                                <color key="backgroundColor" red="0.30300776029999998" green="0.47974016289999999" blue="0.60502804489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="YaO-7R-5I8"/>
+                                    <constraint firstAttribute="height" constant="30" id="azf-iO-JGp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50839342949999999" green="0.50839342949999999" blue="0.50839342949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dpL-Bi-dbV" secondAttribute="bottom" constant="157" id="06d-FS-TtR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LlV-4P-q1p" secondAttribute="bottom" constant="115" id="1ly-47-SWs"/>
+                            <constraint firstItem="ZuB-P2-f29" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3E7-xk-l1o"/>
+                            <constraint firstItem="dpL-Bi-dbV" firstAttribute="top" secondItem="Z9g-Ul-4od" secondAttribute="bottom" constant="28" id="Flk-pR-195"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LlV-4P-q1p" secondAttribute="trailing" constant="-22" id="Ft3-Sw-Ssp"/>
+                            <constraint firstItem="ZuB-P2-f29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gvf-id-gVn"/>
+                            <constraint firstItem="Utz-1n-VZx" firstAttribute="trailing" secondItem="Z9g-Ul-4od" secondAttribute="trailing" id="JE5-2c-xCf"/>
+                            <constraint firstItem="Ksz-jE-0GX" firstAttribute="leading" secondItem="dnD-PX-oQL" secondAttribute="leading" id="MSr-zW-Gie"/>
+                            <constraint firstItem="t0p-4P-XWG" firstAttribute="centerX" secondItem="Utz-1n-VZx" secondAttribute="centerX" id="Um8-5P-1WC"/>
+                            <constraint firstItem="t0p-4P-XWG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="VSg-Uc-HUg"/>
+                            <constraint firstItem="Z9g-Ul-4od" firstAttribute="top" secondItem="dnD-PX-oQL" secondAttribute="bottom" constant="8" symbolic="YES" id="Vc6-nz-d0L"/>
+                            <constraint firstItem="dnD-PX-oQL" firstAttribute="top" secondItem="Utz-1n-VZx" secondAttribute="bottom" constant="22" id="Wdw-cL-XfZ"/>
+                            <constraint firstItem="Utz-1n-VZx" firstAttribute="top" secondItem="Ksz-jE-0GX" secondAttribute="bottom" constant="8" symbolic="YES" id="XJh-Wj-Is9"/>
+                            <constraint firstItem="ZuB-P2-f29" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XwL-wL-BYW"/>
+                            <constraint firstItem="ZuB-P2-f29" firstAttribute="leading" secondItem="LlV-4P-q1p" secondAttribute="leading" id="b88-qw-bdI"/>
+                            <constraint firstItem="Utz-1n-VZx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="f2x-fT-JqD"/>
+                            <constraint firstItem="t0p-4P-XWG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="43" id="fxO-ec-hG5"/>
+                            <constraint firstItem="Z9g-Ul-4od" firstAttribute="centerX" secondItem="dpL-Bi-dbV" secondAttribute="centerX" id="kZB-tL-uPD"/>
+                            <constraint firstItem="Ksz-jE-0GX" firstAttribute="trailing" secondItem="dnD-PX-oQL" secondAttribute="trailing" id="mOb-sW-mcm"/>
+                            <constraint firstItem="Utz-1n-VZx" firstAttribute="leading" secondItem="Z9g-Ul-4od" secondAttribute="leading" id="mz3-an-bvG"/>
+                            <constraint firstItem="ZuB-P2-f29" firstAttribute="centerX" secondItem="Z9g-Ul-4od" secondAttribute="centerX" id="oog-Kn-UGx"/>
+                            <constraint firstAttribute="trailing" secondItem="ZuB-P2-f29" secondAttribute="trailing" id="uAb-sW-aEo"/>
+                            <constraint firstItem="Ksz-jE-0GX" firstAttribute="top" secondItem="t0p-4P-XWG" secondAttribute="bottom" constant="89" id="w9e-Uv-M1c"/>
+                            <constraint firstItem="LlV-4P-q1p" firstAttribute="top" secondItem="t0p-4P-XWG" secondAttribute="bottom" constant="40" id="xGZ-Fo-CXz"/>
+                            <constraint firstItem="Ksz-jE-0GX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="yRF-bX-Omo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="320" height="568"/>
+        <image name="Box" width="408" height="367"/>
+        <image name="Logo" width="377" height="248"/>
+    </resources>
+</document>
