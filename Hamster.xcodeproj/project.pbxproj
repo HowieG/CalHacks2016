@@ -17,6 +17,7 @@
 		F46124381DD7C998004D5A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46124361DD7C998004D5A11 /* LaunchScreen.storyboard */; };
 		F46124431DD7C998004D5A11 /* HamsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46124421DD7C998004D5A11 /* HamsterTests.swift */; };
 		F461244E1DD7C998004D5A11 /* HamsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461244D1DD7C998004D5A11 /* HamsterUITests.swift */; };
+		F46124601DD8045F004D5A11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461245F1DD8045F004D5A11 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F46124491DD7C998004D5A11 /* HamsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461244D1DD7C998004D5A11 /* HamsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamsterUITests.swift; sourceTree = "<group>"; };
 		F461244F1DD7C998004D5A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F461245F1DD8045F004D5A11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				9B64C8791DD7F8B9008C7F75 /* SystemConfiguration.framework in Frameworks */,
 				9B64C8771DD7F8A6008C7F75 /* AVFoundation.framework in Frameworks */,
 				9B64C8731DD7E1DD008C7F75 /* Spotify.framework in Frameworks */,
+||||||| merged common ancestors
+=======
+				F46124601DD8045F004D5A11 /* MapKit.framework in Frameworks */,
+>>>>>>> 95782442e7ef9df9dd640bae4cbd21295a272b25
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +108,12 @@
 				F46124411DD7C998004D5A11 /* HamsterTests */,
 				F461244C1DD7C998004D5A11 /* HamsterUITests */,
 				F461242B1DD7C998004D5A11 /* Products */,
+<<<<<<< HEAD
 				9B64C8751DD7F8A6008C7F75 /* Frameworks */,
+||||||| merged common ancestors
+=======
+				F461245E1DD8045F004D5A11 /* Frameworks */,
+>>>>>>> 95782442e7ef9df9dd640bae4cbd21295a272b25
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +157,14 @@
 				F461244F1DD7C998004D5A11 /* Info.plist */,
 			);
 			path = HamsterUITests;
+			sourceTree = "<group>";
+		};
+		F461245E1DD8045F004D5A11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F461245F1DD8045F004D5A11 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

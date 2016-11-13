@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "492C7F6C62B9E431743213D8C6140198A0EB9247",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "492C7F6C62B9E431743213D8C6140198A0EB9247" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5D3492D4-4566-4F31-BE1E-34ECBCA12D48",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "492C7F6C62B9E431743213D8C6140198A0EB9247" : "..\/CalHacks2016_Hamster%20copy%202\/CalHacks2016"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "project",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hamster.xcodeproj\/project.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:HowieG\/CalHacks2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "492C7F6C62B9E431743213D8C6140198A0EB9247"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:HowieG\/CalHacks2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "492C7F6C62B9E431743213D8C6140198A0EB9247"
+    }
+  ]
+}

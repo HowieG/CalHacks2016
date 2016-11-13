@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Hamster.xcodeproj">
+      location = "group:../../../CalHacks2016_Hamster copy 2/CalHacks2016/Hamster.xcodeproj">
    </FileRef>
 </Workspace>
