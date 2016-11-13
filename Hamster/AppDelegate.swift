@@ -9,14 +9,50 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SPTAudioStreamingDelegate  {
     
     var window: UIWindow?
+    let kClientID = "487496c08cab4d7e84620e9f95fad61e"
+    let kCallbackURL = "hamster://returnAfterLogin"
+    // let kCallbackURL = "www.google.com"
+    let kTokenSwapURL = "http://localhost:1234/swap"
+    let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
     
+   // SPTAuth *auth;
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        
+        if SPTAuth.defaultInstance().canHandleURL(url, withDeclaredRedirectURL: NSURL(string: kCallbackURL)){
+        SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url, tokenSwapServiceEndpointAtURL: NSURL(string: kTokenSwapURL), callback: { (error: NSError!, session:SPTSession!) -> Void in
+        
+        if error != nil{
+            print("AUTHENTICATION ERROR")
+            return
+        }
+            
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            //userDefaults.setBool(true, forKey: "premiumPurchased")
+            
+            let sessionData = NSKeyedArchiver.archivedDataWithRootObject(session)
+            
+            userDefaults.setObject(sessionData, forKey: "SpotifySession")
+            
+            userDefaults.synchronize()
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("loginSuccessful", object:nil)
+            
+//            if(userDefaults.boolForKey("premiumPurchased"))
+            
+            
+            })
+        }
+        
+        return false
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

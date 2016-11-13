@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B64C8731DD7E1DD008C7F75 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B64C8721DD7E1DD008C7F75 /* Spotify.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9B64C8771DD7F8A6008C7F75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B64C8761DD7F8A6008C7F75 /* AVFoundation.framework */; };
+		9B64C8791DD7F8B9008C7F75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B64C8781DD7F8B9008C7F75 /* SystemConfiguration.framework */; };
 		F461242E1DD7C998004D5A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461242D1DD7C998004D5A11 /* AppDelegate.swift */; };
 		F46124301DD7C998004D5A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461242F1DD7C998004D5A11 /* ViewController.swift */; };
 		F46124331DD7C998004D5A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46124311DD7C998004D5A11 /* Main.storyboard */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B64C8721DD7E1DD008C7F75 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		9B64C8741DD7E1E8008C7F75 /* SpotifyDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotifyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B64C8761DD7F8A6008C7F75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B64C8781DD7F8B9008C7F75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F461242A1DD7C998004D5A11 /* Hamster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461242D1DD7C998004D5A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F461242F1DD7C998004D5A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B64C8791DD7F8B9008C7F75 /* SystemConfiguration.framework in Frameworks */,
+				9B64C8771DD7F8A6008C7F75 /* AVFoundation.framework in Frameworks */,
+				9B64C8731DD7E1DD008C7F75 /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B64C8751DD7F8A6008C7F75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B64C8781DD7F8B9008C7F75 /* SystemConfiguration.framework */,
+				9B64C8761DD7F8A6008C7F75 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F46124211DD7C998004D5A11 = {
 			isa = PBXGroup;
 			children = (
+				9B64C8721DD7E1DD008C7F75 /* Spotify.framework */,
 				F461242C1DD7C998004D5A11 /* Hamster */,
 				F46124411DD7C998004D5A11 /* HamsterTests */,
 				F461244C1DD7C998004D5A11 /* HamsterUITests */,
 				F461242B1DD7C998004D5A11 /* Products */,
+				9B64C8751DD7F8A6008C7F75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +118,7 @@
 		F461242C1DD7C998004D5A11 /* Hamster */ = {
 			isa = PBXGroup;
 			children = (
+				9B64C8741DD7E1E8008C7F75 /* SpotifyDemo-Bridging-Header.h */,
 				F461242D1DD7C998004D5A11 /* AppDelegate.swift */,
 				F461242F1DD7C998004D5A11 /* ViewController.swift */,
 				F46124311DD7C998004D5A11 /* Main.storyboard */,
@@ -416,11 +438,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = Hamster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hamster.Hamster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hamster/SpotifyDemo-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -432,11 +457,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = Hamster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hamster.Hamster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hamster/SpotifyDemo-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
