@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWER YOUR MUSIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-D6-HMc">
-                                <rect key="frame" x="88" y="203" width="198" height="121"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="POWER YOUR MUSIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-D6-HMc">
+                                <rect key="frame" x="88" y="212" width="198" height="121"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
                                 <color key="textColor" red="0.062745098039215685" green="0.20000000000000001" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -30,9 +30,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hJZ-D6-HMc" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="183" id="Bhk-OV-pMf"/>
-                            <constraint firstItem="hJZ-D6-HMc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RpD-Q3-zh7"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hJZ-D6-HMc" secondAttribute="bottom" constant="343" id="fz4-4T-h2g"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hJZ-D6-HMc" secondAttribute="bottom" constant="425" id="0rN-mF-Xyb"/>
+                            <constraint firstItem="hJZ-D6-HMc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="67V-0R-lPG"/>
+                            <constraint firstItem="hJZ-D6-HMc" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="101" id="P2P-Z2-12e"/>
                         </constraints>
                     </view>
                 </viewController>
